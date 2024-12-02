@@ -236,7 +236,10 @@ const Navbar = () => {
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
         <Box
           sx={{
-            width: 300,
+            width: {
+              mobile: 250,
+              tablet: 300,
+            },
             padding: "10px",
           }}
         >
@@ -303,7 +306,9 @@ const Navbar = () => {
             <Divider />
 
             {/* Dropdown Items */}
-            <ListItem sx={{display:'flex',justifyContent:'center',p:'1rem'}}>
+            <ListItem
+              sx={{ display: "flex", justifyContent: "center", p: "1rem" }}
+            >
               {/* Translation Dropdown */}
               <IconButton
                 onClick={(event) => setAnchorElTranslation(event.currentTarget)}
@@ -336,7 +341,9 @@ const Navbar = () => {
             </ListItem>
             <Divider />
 
-            <ListItem sx={{display:'flex',justifyContent:'center',p:'1rem'}}>
+            <ListItem
+              sx={{ display: "flex", justifyContent: "center", p: "1rem" }}
+            >
               {/* Plus Dropdown */}
               <IconButton
                 onClick={(event) => setAnchorElPlus(event.currentTarget)}
@@ -366,7 +373,9 @@ const Navbar = () => {
             </ListItem>
             <Divider />
 
-            <ListItem sx={{display:'flex',justifyContent:'center',p:'1rem'}}>
+            <ListItem
+              sx={{ display: "flex", justifyContent: "center", p: "1rem" }}
+            >
               {/* Avatar Dropdown */}
               <IconButton
                 onClick={(event) => setAnchorElAvatar(event.currentTarget)}
