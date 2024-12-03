@@ -40,7 +40,6 @@ const First_Row_Third_Slider = ({ heading, paragraph, ThirdSliderImages }) => {
           height: "316px",
           overflow: "hidden",
           margin: "auto",
-          borderRadius: "15px",
           borderTopLeftRadius: "15px",
           borderBottomRightRadius: "15px",
           boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
