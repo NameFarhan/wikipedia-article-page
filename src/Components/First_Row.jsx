@@ -20,7 +20,17 @@ const First_Row = () => {
   ];
 
   return (
-    <Box sx={{ display: "flex", flexDirection: "column", gap: "65px" }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "65px",
+        justifyContent: {
+          mobile: "center",
+          desktop: "unset ",
+        },
+      }}
+    >
       <First_Row_First_Slider />
       <First_Row_Second_Slider
         images={images}

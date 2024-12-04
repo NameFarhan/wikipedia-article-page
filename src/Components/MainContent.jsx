@@ -25,12 +25,12 @@ const MainContent = ({ mainHeading }) => {
           {mainHeading}
         </Typography>
 
-        <Grid2 container spacing={4}>
+        <Grid2 container spacing={12}>
           <Grid2
             item
             size={{
               mobile: 12,
-              laptop: 3,
+              desktop: 3,
             }}
           >
             <Box
@@ -38,7 +38,7 @@ const MainContent = ({ mainHeading }) => {
                 display: "flex",
                 justifyContent: {
                   mobile: "center",
-                  laptop: "flex-start",
+                  desktop: "flex-start",
                 },
                 alignItems: "center",
                 width: "100%",
@@ -53,17 +53,14 @@ const MainContent = ({ mainHeading }) => {
             item
             size={{
               mobile: 12,
-              laptop: 6,
+              desktop: 6,
             }}
           >
             <Box
               sx={{
                 display: "flex",
-                justifyContent: {
-                  mobile: "center",
-                  laptop: "center",
-                },
-                alignItems: "center",
+                justifyContent: "center",
+                alignItems: "flex-start",
                 width: "100%",
                 height: "100%",
               }}
@@ -78,7 +75,7 @@ const MainContent = ({ mainHeading }) => {
             item
             size={{
               mobile: 12,
-              laptop: 3,
+              desktop: 3,
             }}
           >
             <Box
