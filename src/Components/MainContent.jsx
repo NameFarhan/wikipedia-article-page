@@ -19,7 +19,10 @@ const MainContent = ({ mainHeading }) => {
               mobile: "20px",
               laptop: "25px",
             },
-            mb: "2rem",
+            mb: {
+              mobile: "4rem",
+              desktop: "6rem",
+            },
           }}
         >
           {mainHeading}
@@ -85,7 +88,7 @@ const MainContent = ({ mainHeading }) => {
                   mobile: "center",
                   laptop: "flex-end",
                 },
-                alignItems: "center",
+                alignItems: "flex-start",
                 width: "100%",
                 height: "100%",
               }}
