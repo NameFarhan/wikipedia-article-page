@@ -5,7 +5,12 @@ const Footer = () => {
   return (
     <>
       <Box
-        sx={{ display: "flex", justifyContent: "center", alignItems: "center",mt:'2rem' }}
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          mt: "2rem",
+        }}
       >
         <Box
           sx={{
@@ -35,7 +40,9 @@ const Footer = () => {
           >
             W
           </Box>
-          <Typography sx={{ fontSize: "12px", letterSpacing: "2px" }}>
+          <Typography
+            sx={{ fontSize: "12px", letterSpacing: "2px", textAlign: "center" }}
+          >
             Faire un don | A propos | Politique de confidentialité | Nous
             contacter
           </Typography>
