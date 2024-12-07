@@ -3,11 +3,15 @@ import Navbar from "../Components/Navbar";
 import MainContent from "../Components/MainContent";
 import Footer from "../Components/Footer";
 
-const Home = () => {
+const Home = ({ setMode, mode }) => {
   return (
     <>
       <Navbar />
-      <MainContent mainHeading={"Daniel KALUUYA"} />
+      <MainContent
+        setMode={setMode}
+        mode={mode}
+        mainHeading={"Daniel KALUUYA"}
+      />
       <Footer />
     </>
   );
