@@ -200,20 +200,10 @@ const AntSwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-export default function NightMode({ setMode, mode }) {
+export default function NightMode() {
   return (
     <FormGroup>
-      <FormControlLabel
-        control={
-          <MaterialUISwitch
-            sx={{ m: 1 }}
-            checked={mode}
-            onChange={() => {
-              setMode("dark");
-            }}
-          />
-        }
-      />
+      <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} />} />
     </FormGroup>
   );
 }

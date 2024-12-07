@@ -4,7 +4,7 @@ import NightMode from "../Components/NightMode";
 import React from "react";
 import Third_Row_Avatar from "./Third_Row_Avatar";
 
-const Third_Row = ({ setMode, mode }) => {
+const Third_Row = () => {
   const theme = useTheme();
   const handleCopy = (text) => {
     navigator.clipboard.writeText(text).then(
@@ -29,7 +29,7 @@ const Third_Row = ({ setMode, mode }) => {
       >
         {/* night button */}
         <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
-          <NightMode mode={mode} setMode={setMode} />
+          <NightMode />
         </Box>
         <Box sx={{ display: "flex", flexDirection: "column", width: "100%" }}>
           <Box

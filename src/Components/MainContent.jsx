@@ -6,7 +6,7 @@ import First_Row from "./First_Row";
 import Second_Row from "./Second_Row";
 import Third_Row from "./Third_Row";
 
-const MainContent = ({ mainHeading, setMode, mode }) => {
+const MainContent = ({ mainHeading }) => {
   const theme = useTheme();
   return (
     <>
@@ -93,7 +93,7 @@ const MainContent = ({ mainHeading, setMode, mode }) => {
                 height: "100%",
               }}
             >
-              <Third_Row setMode={setMode} mode={mode} />
+              <Third_Row />
             </Box>
           </Grid2>
         </Grid2>
